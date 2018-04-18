@@ -4,13 +4,13 @@
   tasks:
     - name: Display all Environment Variables
       debug:
-        var: environment | to_nice_json
+        var: environment
     - name: Display all group names
       debug:
-        var: group_names | to_nice_json
+        var: group_names
     - name: Display all groups
       debug:
-        var: groups | to_nice_json
+        var: groups
     - name: Display all variables/facts known for a host
       debug:
-        var: hostvars[inventory_hostname] | to_nice_json
+        var: hostvars[inventory_hostname]
